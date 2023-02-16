@@ -1,0 +1,264 @@
+:root {
+  --new-color: orange;
+  --y-color: yellow;
+  --red-color: rgb(213, 13, 96);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  /* height: 1000px; */
+}
+/*  */
+/* start nav bar */
+.navbar-toggler {
+  color: var(--new-color);
+}
+.navbar-toggler:focus {
+  color: var(--new-color);
+  box-shadow: none;
+}
+.navbar-toggler:hover {
+  box-shadow: none;
+  color: rgb(251, 201, 19);
+}
+
+nav {
+  background-color: rgb(15, 29, 86);
+  color: white;
+}
+
+.nav-link {
+  color: #c1c1c1;
+}
+.nav-link:focus {
+  color: var(--new-color);
+}
+[aria-expanded="true"] {
+  transform: rotate(90deg);
+}
+.nav-link:not(.active):hover {
+  color: var(--red-color);
+}
+
+nav ul li .active {
+  color: var(--new-color);
+}
+nav ul li .active:hover {
+  color: var(--new-color);
+}
+
+.search {
+  border-left: 2px solid var(--new-color);
+}
+.search svg {
+  color: rgb(71, 217, 250);
+}
+/* end nav bar */
+/* start landing */
+.landing {
+  min-height: calc(100vh - 56px);
+  background-color: #0f1d56;
+}
+/* end landing */
+/* start second landing */
+.sec-landing {
+  min-height: 100vh;
+  background-color: white;
+}
+.go::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  background-color: #20c0c943;
+  width: 80px;
+  height: 3px;
+}
+.sec-landing > div {
+  width: 100%;
+
+  position: relative;
+}
+.main svg {
+  color: var(--y-color);
+  font-size: 50px;
+}
+.num > div div {
+  font-size: 200px;
+
+  color: #20c0c943;
+}
+
+.icon {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%);
+  color: #1ca3aa;
+}
+/* end second landing */
+/* start thired landing */
+/* start thired landing - part one */
+.rd-landing {
+  min-height: calc(100vh - 80px);
+}
+.one-part h4 {
+  font-size: 30px;
+}
+.one-part p::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 2px;
+  background-color: #1ca3aa;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* start thired landing - part two  */
+.group-1 li {
+  cursor: pointer;
+}
+.group-1 li:not(.active-li):hover {
+  color: var(--red-color);
+}
+.active-li {
+  color: var(--y-color);
+  background-color: var(--red-color);
+  border-radius: 20px;
+  padding: 8px;
+  width: fit-content;
+}
+ul .active-li:hover {
+  color: var(--y-color);
+}
+.three-part > div {
+  position: relative;
+}
+
+.three-part > div::before {
+  position: absolute;
+  content: "";
+  width: 13.5rem;
+  height: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(165, 42, 42, 0.499);
+}
+.three-part > div:hover::before {
+  height: 100%;
+  content: "apps";
+}
+@media (max-width: 767px) {
+  .three-part > div::before {
+    width: 15.5rem;
+  }
+}
+@media (max-width: 575px) {
+  .three-part > div::before {
+    width: 17.3rem;
+    left: 50%;
+  }
+}
+/* end thired landing */
+/* start stuff */
+.stuff {
+  min-height: calc(100vh - 56px);
+}
+.stuff .great::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 2px;
+  background-color: #44c0b6;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* end stuff */
+/* start new land */
+.newland {
+  min-height: calc(100vh - 56px);
+  background-color: #9e9e9e7d;
+}
+/* end new land */
+/* start icons area */
+.do {
+  font-size: 30px;
+}
+.span-l {
+  font-size: 50px;
+}
+/* end icons area */
+/* start project */
+.project {
+  background-color: #0f1d56;
+}
+.blug-icon {
+  font-size: 7rem;
+}
+.blug-p::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 2px;
+  background-color: #1ca3aa;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* end project */
+/* start subscribe */
+.sub input {
+  border: none;
+  border-bottom: 2px solid white;
+  caret-color: var(--red-color);
+  color: var(--red-color);
+}
+
+.sub input::placeholder {
+  color: white;
+}
+.sub input:focus {
+  outline: none;
+  border: none;
+}
+.sub a {
+  background-color: #0f1d56;
+}
+/* end subscribe */
+/* start footer */
+footer {
+  background-color: #0f1d56;
+}
+footer p {
+  font-size: 15px;
+}
+footer .sp-footer {
+  color: #1ca3aa;
+}
+footer .last-ul li {
+  font-size: 13px;
+}
+/* end footer */
+
+.sp-so:nth-child(1) {
+  color: rgb(58, 94, 254);
+
+  width: 10px;
+}
+.sp-so:nth-child(2) {
+  color: rgb(103, 222, 255);
+}
+.sp-so:nth-child(3) {
+  color: rgb(247, 36, 96);
+}
+.sp-so:nth-child(4) {
+  color: rgb(255, 0, 204);
+}
